@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1f29;
+  h1 {
+    text-align: center;
+    color: #ffffff;
+  }
+  h2 {
+    display: flex;
+    text-align: center;
+    color: #ffffff;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    button {
+      margin: 5%;
+      height: 35px;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      background-color: #6c38cc;
+      color: #fafafa;
+    }
+    button:focus {
+      background-color: #341b61;
+    }
+    button:hover {
+      background-color: #341b61;
+    }
+  }
+  .contentApi {
+    margin-left: 10%;
+    min-width: 500px;
+    color: #fafafa;
+    div {
+      margin: 5%;
+    }
+  }
+}

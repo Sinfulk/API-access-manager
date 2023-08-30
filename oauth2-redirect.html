@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>OAuth2 Redirect</title>
+  </head>
+  <body>
+    <script>
+      // Получите параметры редиректа из URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const code = urlParams.get('code');
+      const scope = urlParams.get('scope');
+      const state = urlParams.get('state');
+      const session_state = urlParams.get('session_state');
+
+      // Обработка полученных данных (подставьте свой код для обработки)
+      if (code && state) {
+        // Ваш код для обработки успешной аутентификации
+        // Перенаправьте на ваше React-приложение с данными
+        window.location.href = `https://192.168.1.20:5173/?code=${code}&scope=${scope}&state=${state}&session_state=${session_state}`;
+      } else {
+        // Ваш код для обработки ошибки аутентификации
+        console.error('Authorization failed');
+      }
+    </script>
+  </body>
+</html>
