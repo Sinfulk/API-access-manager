@@ -1,8 +1,0 @@
-VITE_Authority= https://sts-identity.intelwash.ru/
-VITE_Client_Id= UiTest.client_ID
-VITE_Client_Secret= UiTestClientSecret
-VITE_Redirect_Uri= https://192.168.1.20:5173/oauth2-redirect.html
-VITE_Silent_Redirect_Uri= https://sts-identity.intelwash.ru/connect/token
-VITE_TestApiUri= https://api.intelwash.ru/uitest
-VITE_TestData= /v2-Dev/TestData/TestData
-VITE_TestData_AdminData= /v2-Dev/TestData/AdminData
